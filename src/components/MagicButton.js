@@ -24,7 +24,7 @@ export class MagicButton extends React.Component {
         onClick={this.handleEvent}
         onDoubleClick={this.handleEvent}
         onKeyDown={this.handleEvent}
-      >Submit</button>
+      >Click to pollute console</button>
     )
   }
 }
