@@ -1,6 +1,8 @@
 import React from 'react'
+import styles from 'components/styles/MagicButton.css'
+import CSSModules from 'react-css-modules'
 
-export class MagicButton extends React.Component {
+class MagicButton extends React.Component {
 
   handleEvent = ({ type }) => {
     switch (type) {
@@ -24,7 +26,10 @@ export class MagicButton extends React.Component {
         onClick={this.handleEvent}
         onDoubleClick={this.handleEvent}
         onKeyDown={this.handleEvent}
+        styleName="button"
       >Click to pollute console</button>
     )
   }
 }
+
+export default CSSModules(MagicButton, styles)
